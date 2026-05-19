@@ -1,5 +1,6 @@
 package net.writeacode.java.prep;
 
+import net.writeacode.java.prep.dsa.NumericArraySort;
 import net.writeacode.java.prep.dsa.SlideWindowSampleBasic;
 import net.writeacode.java.prep.strings.FindNumberOfVowels;
 
@@ -16,5 +17,9 @@ public class Main {
         int k =2;
         basicSlideWindow.maxSum(nums, k);
         basicSlideWindow.maxProduct(nums, k);
+
+        NumericArraySort numericArraySort = new NumericArraySort();
+        int [] numsToSort = {1,0,2,0,3,0,4,5,0,3,0,1,2,3,0,4,5};
+        numericArraySort.sortZeros(numsToSort);
     }
 }
