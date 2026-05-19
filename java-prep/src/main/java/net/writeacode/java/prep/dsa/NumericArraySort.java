@@ -11,7 +11,6 @@ public class NumericArraySort {
         //    while(indexB == 0)
         //       move the index one
         //    change the number between indexA and indexB
-
         for(int i = 0; i<nums.length -1; i++) {
             if (nums[i] == 0) {
                 int indexB = i + 1;
