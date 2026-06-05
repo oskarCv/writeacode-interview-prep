@@ -1,8 +1,6 @@
 package net.writeacode.java.prep;
 
-import net.writeacode.java.prep.dsa.DuplicateNumbers;
-import net.writeacode.java.prep.dsa.NumericArraySort;
-import net.writeacode.java.prep.dsa.SlideWindowSampleBasic;
+import net.writeacode.java.prep.dsa.*;
 import net.writeacode.java.prep.strings.FindNumberOfVowels;
 
 public class Main {
@@ -27,5 +25,10 @@ public class Main {
         int []dupNumbers= {1,2,3,5,4,6,2,5};
         System.out.println("Contains Duplicates: "+ duplicateNumbers.isDuplicate(dupNumbers));
 
+        int []numsSum = {11,15,2,7};
+        int sumTarget = 9;
+        TwoSum twoSum = new TwoSum();
+        var indexSum = twoSum.twoSum(numsSum, sumTarget);
+        System.out.println("Index Sum: "+ indexSum);
     }
 }
